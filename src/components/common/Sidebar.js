@@ -9,11 +9,11 @@ import SettingsIcon from "../../assets/sidebarIcons/setting_icon.png";
 
 const Sidebar = () => {
   return (
-    <div className="w-[20rem] h-[100vh] sticky top-0 overflow-hidden transition duration-500 flex justify-center items-center mdM:p-0 p-8 ">
+    <div className="w-[20rem] h-[100vh] zsM:w-full sticky top-0 overflow-hidden transition duration-500 flex justify-center items-center mdM:p-0 p-8 ">
       <div className="bg-gradient-to-b from-blue-500 via-blue-600 to-blue-700 w-full h-full mdM:rounded-none rounded-2xl p-10 py-12 flex flex-col justify-between">
         <ul className="flex flex-col gap-y-7">
             <li className="text-4xl font-bold text-white mb-5"> Board.</li>
-            <li className="text-white font-bold flex gap-5 items-center"> <img src={DashboardIcon} />  Dasboard</li>
+            <li className="text-white font-bold flex gap-5 items-center"> <img src={DashboardIcon} />  Dashboard</li>
             <li className="text-white flex gap-5 items-center">  <img src={TransactionsIcon} /> Transactions</li>
             <li className="text-white flex gap-5 items-center">  <img src={SchedulesIcon} /> Schedules</li>
             <li className="text-white flex gap-5 items-center">  <img src={UsersIcon} /> Users</li>
