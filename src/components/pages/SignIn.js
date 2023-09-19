@@ -7,8 +7,10 @@ import {
 } from "react-icons/ai";
 import { BiLogoDiscord } from "react-icons/bi";
 import { FcGoogle } from "react-icons/fc";
+import { useNavigate } from "react-router-dom";
 
 const SignIn = () => {
+  const navigate = useNavigate();
   return (
     <div className="h-[100vh] bg-[#F8FAFF] grid grid-cols-2">
       <div
@@ -52,7 +54,7 @@ const SignIn = () => {
               <input className="text-base font-lato bg-[#F5F5F5] p-2 rounded-lg focus:outline-none focus:bg-[#EAEAEA]" type="password" id="password" />
              </div>
              <p className="cursor-pointer text-[#346BD4] font-lato">Forgot Password?</p>
-             <button className="text-white font-bold p-2 rounded-lg bg-[#4285F4] ">Sign In</button>
+             <button onClick={()=>navigate('/dashboard')} className="text-white font-bold p-2 rounded-lg bg-[#4285F4] ">Sign In</button>
           </div>
           <p className="font-lato text-[#858585] mt-5 text-center">Don’t have an account? <span className="cursor-pointer text-[#346BD4]"> Register here </span></p>
         </div>
