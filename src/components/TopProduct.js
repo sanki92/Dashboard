@@ -30,7 +30,7 @@ const TopProduct = ({ data }) => {
       <div className="grid grid-cols-2 lgM:grid-cols-1">
         <PieChart data={pieChartData} size={160} thickness={20} />
 
-        <ul className=" flex flex-col justify-around lgM:w-fit lgM:ml-auto ">
+        <ul className=" flex flex-col justify-around lgM:w-fit mdM:flex-row mdM:justify-between mdM:w-full xsM:flex-col lgM:ml-auto ">
           {pieChartData?.map((data) => {
             return (
               <li className="grid grid-cols-6">
